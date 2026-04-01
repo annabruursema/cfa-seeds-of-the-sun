@@ -13,11 +13,6 @@ export default function ArtworkCard({ artwork, isVoted, canVote, loading, onView
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-        {/* Category badge */}
-        <span className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-sm text-[10px] font-medium uppercase tracking-wider text-gallery-600">
-          {artwork.category}
-        </span>
-
         {/* Voted indicator */}
         {isVoted && (
           <span className="absolute top-3 right-3 w-8 h-8 rounded-full bg-emerald-500 flex items-center justify-center shadow-lg">
